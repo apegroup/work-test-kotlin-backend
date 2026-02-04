@@ -14,9 +14,7 @@ You will build a small backend service in **Kotlin (JVM)**, preferably using **K
 
 The scope is intentionally limited and should take approximately **2–3 hours** to complete.
 
-The code you submit will be used as the basis for:
-- A **code review discussion**
-- A **separate live system design exercise** during the interview
+The code you submit will be used as the basis for a **code review discussion**.
 
 ---
 
@@ -35,36 +33,37 @@ There is no downstream business API to implement.
 
 ## Behavior
 
-Each API key has a usage quota
-Example: 100 units per hour
+Each API key has a usage quota, for example: 100 units per hour.
+
 When a request is received:
-If enough quota remains, the request is accepted (200 OK)
-If the quota would be exceeded, the request is rejected (429 Too Many Requests or similar)
-Usage quotas automatically reset after the configured time window
-API keys must be tracked independently
-The service must behave correctly under concurrent requests
-Invalid input (e.g. negative units, missing headers) should be handled gracefully
+- If enough quota remains, the request is accepted (200 OK)
+- If the quota would be exceeded, the request is rejected (429 Too Many Requests or similar)
+- Usage quotas automatically reset after the configured time window.
+- API keys must be tracked independently.
+- The service must behave correctly under concurrent requests.
+- Invalid input (e.g. negative units, missing headers) should be handled gracefully.
+
 
 ## Constraints
 
 The following constraints are intentional and reflect an MVP client delivery:
 
-Single service instance
-In‑memory storage is acceptable
-No database or external cache is required
-No authentication beyond the API key
-No frontend or UI
+- Single service instance
+- In‑memory storage is acceptable
+- No database or external cache is required
+- No authentication beyond the API key
+- No frontend or UI
 
 ## Optional Considerations
 
 You may choose to implement or simply reason about any of the following:
 
-Fixed vs. sliding time windows
-Returning remaining quota information in responses
-Logging or basic metrics
-Unit, integration, or API‑level tests
-Clock abstraction or time handling strategies
-Choosing what not to implement is part of the exercise.
+- Fixed vs. sliding time windows
+- Returning remaining quota information in responses
+- Logging or basic metrics
+- Unit, integration, or API‑level tests
+- Clock abstraction or time handling strategies
+- Choosing what not to implement is part of the exercise.
 
 ## What We’re Looking For
 
@@ -72,48 +71,40 @@ We will use this submission as the basis for a technical discussion.
 
 We are interested in:
 
-Clear, readable, and maintainable code
-Sensible abstractions without over‑engineering
-Thoughtful trade‑offs within the given constraints
-Awareness of concurrency and time‑based logic
-Understanding of testing strategies (unit, integration, end‑to‑end)
+- Clear, readable, and maintainable code
+- Sensible abstractions without over‑engineering
+- Thoughtful trade‑offs within the given constraints
+- Awareness of concurrency and time‑based logic
+- Understanding of testing strategies (unit, integration, end‑to‑end)
+
 We are not looking for:
-A perfect or fully production‑ready solution
-Extensive infrastructure or frameworks
-Premature optimization or scalability
+- A perfect or fully production‑ready solution
+- Extensive infrastructure or frameworks
+- Premature optimization or scalability
 
 ## Deliverables
 
 Please provide:
 
-A working backend service implemented in Kotlin
-A short README section describing:
-Your design choices
-Trade‑offs made for this MVP
-What you would change or add for a larger or higher‑traffic system
-(Optional) Tests or example requests
+- A working backend service implemented in Kotlin
+- A short README section describing:
+  - Your design choices
+  - Trade‑offs made for this MVP
+  - What you would change or add for a larger or higher‑traffic system
+  - (Optional) Tests or example requests
 
-## How This Will Be Used in the Interview
+## Code Review
 
-Your submission will be used during the interview in two parts:
+Once this has been completed you will be scheduled for a discussion where you will walk us through your solution, explaining:
 
-## Part I – Code Review
-
-You will walk us through your solution, explaining:
-
-What the code does
-Why you structured it the way you did
-What assumptions or limitations exist
-What risks or improvements you would highlight to a client
-
-## Part II – System Design
-
-You will participate in a separate live system design exercise (e.g. designing a Twitter‑like application).
-This coding exercise is intentionally smaller in scope and serves as a starting point for that discussion.
+- What the code does
+- Why you structured it the way you did
+- What assumptions or limitations exist
+- What risks or improvements you would highlight to a client
 
 ## Final Notes
 
 This assessment is intended to support a technical conversation, not to evaluate how much you can build in a limited time.
-We value clear reasoning, pragmatic decision‑making, and thoughtful communication.
-Thank you for taking the time to complete this exercise — we look forward to discussing it with you.
+We value clear reasoning, smart decision‑making, and thoughtful communication.
+Thank you for taking the time to complete this exercise — we look forward to discussing it with you!
 
