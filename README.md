@@ -108,3 +108,13 @@ This assessment is intended to support a technical conversation, not to evaluate
 We value clear reasoning, smart decision‑making, and thoughtful communication.
 Thank you for taking the time to complete this exercise — we look forward to discussing it with you!
 
+## All done?
+
+⭐ Awesome, great job! ⭐ The next step will be for an Eidra developer to take a look at your submission. Here are a few ways to get your project to us:
+
+You could share your repo (if public) so that we can clone and install locally, you can email your repo link to neil.bertz@eidra.com
+Share it from a Cloud solution to Umain (e.g. Google Drive)
+You could ZIP your project and send it over
+Questions?
+
+Don't hesistate to contact us if you have any questions! you can email your recruitment contact and they will be happy to help you out.
